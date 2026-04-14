@@ -11,9 +11,11 @@ void loop() {
   
   adcValues[1] = analogRead(A1);
   nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
-  
-  sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
-  Serial.print(chuoi);
+ Serial.print("{\"temp1\": ");
+  Serial.print(t1); // Thay t1 bằng biến nhiệt độ của bạn
+  Serial.print(", \"temp2\": ");
+  Serial.print(t2); 
+Serial.println("}");
   delay(100);
   // Đọc cảm biến thứ 3 ở chân A2
   int val3 = analogRead(A2);
