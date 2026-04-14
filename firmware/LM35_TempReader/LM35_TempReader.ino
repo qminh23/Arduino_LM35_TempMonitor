@@ -15,4 +15,10 @@ void loop() {
   sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
   Serial.print(chuoi);
   delay(100);
+  // Đọc cảm biến thứ 3 ở chân A2
+  int val3 = analogRead(A2);
+  float temp3 = (val3 * 5.0 * 100.0) / 1024.0; // Hoặc công thức bạn đang dùng
+  
+  Serial.print("Nhiet do 3: ");
+  Serial.println(temp3);
 }
