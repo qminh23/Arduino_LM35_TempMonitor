@@ -12,8 +12,7 @@ void loop() {
   adcValues[1] = analogRead(A1);
   nhietDo[1] = (adcValues[1] * 500.0) / 1023.0;
   
-  sprintf(chuoi, "%d,%d\n", (int)nhietDo[0], (int)nhietDo[1]);
-  Serial.print(chuoi);
+Serial.print("--- DU LIEU NHIET DO SV A ---"); // SV A sua dong nay  Serial.print(chuoi);
   delay(100);
   // Đọc cảm biến thứ 3 ở chân A2
   int val3 = analogRead(A2);
