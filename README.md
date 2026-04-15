@@ -29,3 +29,4 @@ Arduino_LM35_TempMonitor/
 │   └── LM35_TempReader/
 │       └── LM35_TempReader.ino   # Mã nguồn chính của hệ thống
 ├── README.md                     # Tài liệu giới thiệu dự án
+Tác giả:  https://qminh23.github.io
