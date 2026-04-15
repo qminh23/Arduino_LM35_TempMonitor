@@ -1,4 +1,4 @@
-# 🌡️ Hệ thống Giám sát Nhiệt độ Đa kênh (Arduino LM35)
+# 🌡️ Hệ thống Giám sát Nhiệt độ Đa kênh (Arduino LM35)        Tác giả:  https://qminh23.github.io
 
 ## 📖 Mô tả dự án
 Dự án IoT cơ bản sử dụng vi điều khiển Arduino để đọc dữ liệu nhiệt độ từ 3 cảm biến LM35. Dữ liệu sau khi thu thập và tính toán sẽ được đóng gói dưới định dạng JSON và gửi qua cổng Serial, giúp các hệ thống phần mềm cấp cao (như Web/App) dễ dàng bóc tách và giám sát theo thời gian thực.
@@ -22,11 +22,13 @@ Dự án IoT cơ bản sử dụng vi điều khiển Arduino để đọc dữ 
 2. **Nạp code:** Mở file `firmware/LM35_TempReader/LM35_TempReader.ino` bằng Arduino IDE và nạp (Upload) xuống mạch.
 3. **Giám sát:** Mở Serial Monitor, chọn Baudrate là `9600`. Dữ liệu sẽ hiển thị dưới dạng: `{"temp1": 25.5, "temp2": 26.0, "temp3": 24.8}`
 
-## 📁 Cấu trúc thư mục
+## 📁 Cấu trúc thư mục 
 ```text
 Arduino_LM35_TempMonitor/
 ├── firmware/
 │   └── LM35_TempReader/
 │       └── LM35_TempReader.ino   # Mã nguồn chính của hệ thống
 ├── README.md                     # Tài liệu giới thiệu dự án
-Tác giả:  https://qminh23.github.io
+
+
+
