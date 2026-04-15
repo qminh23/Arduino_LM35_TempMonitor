@@ -23,3 +23,13 @@ build/
 # OS
 .DS_Store
 Thumbs.db
+# Bỏ qua file dịch C# (Visual Studio)
+pc_app/**/bin/
+pc_app/**/obj/
+*.cache
+*.suo
+*.manifest
+
+# Bỏ qua file rác Proteus
+*.pdsbak
+*.workspace
